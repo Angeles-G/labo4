@@ -1,0 +1,24 @@
+
+<router-outlet />
+
+<h1>Ejerccio 1</h1>
+
+<h3>Edad 1:</h3>
+
+<input [(ngModel)]="edadUno" />
+
+<h3>Edad 2:</h3>
+
+<input [(ngModel)]="edadDos" />
+
+
+<h2>Promedio </h2>
+<p>{{promedio}}</p>
+
+
+
+<h2>suma </h2>
+<p>{{suma}}</p>
+
+<button (click) = "calcularPromedio()">Calcular</button>
+<button (click) = "limpiar()">Limpiar</button>
