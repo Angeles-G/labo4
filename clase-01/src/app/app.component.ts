@@ -10,7 +10,7 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'clase-01';
+  title = 'Garcia Angeles Belen ';
 
   edadUno: number = 0;
   edadDos: number = 0;
