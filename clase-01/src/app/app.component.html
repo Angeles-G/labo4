@@ -1,24 +1,43 @@
-
 <router-outlet />
 
-<h1>Ejerccio 1</h1>
+<div class="exercise-container">
+    <h1>Ejercicio 1</h1>
 
-<h3>Edad 1:</h3>
+    <div class="input-group">
+        <label for="edad1">
+            <h3>Edad 1:</h3>
+        </label>
+        <input id="edad1" type="number" [(ngModel)]="edadUno" />
+    </div>
 
-<input [(ngModel)]="edadUno" />
+    <div class="input-group">
+        <label for="edad2">
+            <h3>Edad 2:</h3>
+        </label>
+        <input id="edad2" type="number" [(ngModel)]="edadDos" />
+    </div>
 
-<h3>Edad 2:</h3>
+    <div class="results">
+        <h2>Promedio:</h2>
+        <p>{{promedio}}</p>
 
-<input [(ngModel)]="edadDos" />
+        <h2>Suma:</h2>
+        <p>{{suma}}</p>
+    </div>
 
+    <div class="actions">
+        <button (click)="calcularPromedio()">Calcular</button>
+        <button (click)="limpiar()">Limpiar</button>
+    </div>
+</div>
 
-<h2>Promedio </h2>
-<p>{{promedio}}</p>
-
-
-
-<h2>suma </h2>
-<p>{{suma}}</p>
-
-<button (click) = "calcularPromedio()">Calcular</button>
-<button (click) = "limpiar()">Limpiar</button>
+<hr>
+<h1>Ejercicio 2</h1>
+<div class="exercise-container">
+    <nav class="nav-buttons">
+        <button routerLink="/Bienvenido">Bienvenido</button>
+        <button routerLink="/login">Login</button>
+        <button routerLink="/usuario">Usuario</button>
+        <button routerLink="/error">Error</button>
+      </nav>
+</div>
